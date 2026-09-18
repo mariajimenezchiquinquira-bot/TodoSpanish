@@ -26,9 +26,6 @@ import payraSplitTableau from "@/assets/projects/payrasplit-tableau-dashboard.pn
 import weworkValuation from "@/assets/projects/wework-valuation.png";
 import weworkTimeline from "@/assets/projects/wework-timeline.png";
 import weworkLossesDonut from "@/assets/projects/wework-losses-donut.png";
-import budlightRanking from "@/assets/projects/budlight-ranking.png";
-import budlightMarketShare from "@/assets/projects/budlight-market-share.png";
-import budlightSalesVolume from "@/assets/projects/budlight-sales-volume.png";
 import churnDashboard from "@/assets/projects/churn-capital-loss-dashboard-v2.png";
 import segElbowMethod from "@/assets/projects/segmentation-5-elbow-method.png";
 import segDominantCategory from "@/assets/projects/segmentation-4-dominant-category.png";
@@ -373,39 +370,6 @@ function Index() {
                   />
                 </a>
               </div>
-            </ProjectCard>
-
-            <ProjectCard
-              title="Bud Light / AB InBev: El Costo de una Decisión de Marketing"
-              tech={["Caso de Negocio", "Análisis Estratégico", "Business Understanding"]}
-              actions={
-                <DocsLink href="/docs/BudLight_Case_Study_Analysis.pdf" label="Ver Análisis Completo" />
-              }
-            >
-              <CardBlock label="Problema">
-                A comienzos de 2023, Bud Light era la cerveza más vendida en Estados Unidos. Una
-                campaña de marketing generó un fuerte rechazo público que afectó las ventas y el
-                posicionamiento de la marca, costándole a AB InBev más de $1.000 millones en
-                pérdidas.
-              </CardBlock>
-              <CardBlock label="Enfoque">
-                Analicé la decisión de marketing, la respuesta de gestión de crisis y su impacto
-                en ventas, participación de mercado y valor de marca.
-              </CardBlock>
-              <CardBlock label="Resultado">
-                Bud Light cayó del puesto #1 al #3, mientras que el volumen de ventas cayó casi
-                un 30% interanual. El caso mostró que una comunicación poco clara y una respuesta
-                de crisis inconsistente pueden amplificar el impacto de una controversia y
-                erosionar la posición competitiva de una marca.
-              </CardBlock>
-              <ProjectImageGrid
-                columns={3}
-                images={[
-                  { src: budlightRanking, alt: "Ranking de marcas de cerveza en EE. UU. antes y después del boicot de 2023" },
-                  { src: budlightMarketShare, alt: "Participación de mercado de cerveza en EE. UU. por marca en 2024" },
-                  { src: budlightSalesVolume, alt: "Volumen de ventas de Bud Light antes y después del boicot" },
-                ]}
-              />
             </ProjectCard>
 
             <ProjectCard
