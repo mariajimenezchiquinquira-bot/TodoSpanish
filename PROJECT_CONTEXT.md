@@ -1,13 +1,13 @@
-# Contexto del proyecto — Portafolio de Producto en Español (María José Jiménez)
+# Contexto del proyecto — Portafolio Consolidado en Español (María José Jiménez)
 
 Este archivo resume la estructura de este proyecto y los cambios hechos con ayuda de Claude, para tener contexto rápido en futuras sesiones.
 
 ## Datos generales
 
-- Proyecto: React + Vite, versión en español del portafolio de producto (`portfolio-product-es`)
-- Ubicación: `C:\Users\alura\Downloads\Claude\PortfolioHTML\portfolio-product-es`
-- Repositorio: `github.com/mariajimenezchiquinquira-bot/portfolio-product-es`, rama `master`
-- Este proyecto es una copia independiente de `portfolio-product` (la versión en inglés, en `C:\Users\alura\Downloads\Claude\PortfolioHTML\portfolio-product`, rama `main`). Se creó como proyecto separado —código propio, sin compartir `.git`— porque además del idioma, las imágenes también iban a cambiar (capturas de pantalla en español en vez de en inglés).
+- Proyecto: React + Vite, portafolio consolidado en español con TODOS los proyectos de María José (Producto, Business Intelligence y Análisis de Datos), sin duplicados: 8 proyectos en total.
+- Ubicación: `C:\Users\alura\Documents\Claude\PortfolioHTML\EStodo-portfolio`
+- Repositorio: PENDIENTE de crear en GitHub (nombre sugerido: `EStodo-portfolio`), rama `master`
+- Este proyecto se creó copiando la base de `portfolio-product-es` y agregando los proyectos de `portfolio-bi-es` y `portfolio-data-analysis-es`, evitando repetir el proyecto "Análisis de Fuga de Clientes y Pérdida de Capital" (estaba en ambos). Código propio, sin compartir `.git` con ninguno de los otros portafolios.
 - Todo el contenido del portafolio vive en `src/routes/index.tsx`
 - Las imágenes de los proyectos están en `src/assets/projects/`
 - Los textos de los botones reutilizables (GitHub, documentación, dashboard) viven en `src/components/portfolio/ProjectCard.tsx`
