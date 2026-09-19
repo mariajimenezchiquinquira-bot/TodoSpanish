@@ -373,25 +373,25 @@ function Index() {
             </ProjectCard>
 
             <ProjectCard
-              title="Análisis de Fuga de Clientes y Pérdida de Capital"
+              title="Análisis — Fuga de Clientes y Pérdida de Capital"
               tech={["Power BI", "DAX", "Visualización de Datos"]}
               actions={
                 <GithubLink href="https://github.com/mariajimenezchiquinquira-bot/PowerBi-Customer-Churn-Capital-Loss-Analysis" />
               }
             >
               <CardBlock label="Problema">
-                Un banco enfrentaba fuga de clientes sin identificar sus principales causas ni
-                su impacto en el capital.
+                Un banco enfrentaba una alta fuga de clientes sin identificar sus principales
+                causas ni el impacto financiero asociado.
               </CardBlock>
               <CardBlock label="Enfoque">
-                Realicé un análisis exploratorio en Power BI mediante visualizaciones y
-                comparaciones para identificar los patrones que mejor explicaban la fuga y los
-                segmentos de mayor riesgo.
+                Se realizó un análisis exploratorio en Power BI para identificar patrones de
+                fuga, comparar segmentos y detectar los clientes con mayor riesgo de abandono.
               </CardBlock>
               <CardBlock label="Resultados">
-                El banco enfrenta una fuga de capital concentrada en clientes de alto saldo,
-                generando un impacto financiero significativo. La principal señal de alerta es la
-                inactividad, especialmente en Alemania, donde se registra la mayor tasa de fuga.
+                Se encontró que la pérdida de capital estaba concentrada en clientes con altos
+                saldos, generando un impacto financiero significativo. La inactividad surgió
+                como la principal señal de alerta, especialmente en Alemania, donde se registró
+                la mayor tasa de fuga.
               </CardBlock>
               <img
                 src={churnDashboard}
@@ -402,8 +402,8 @@ function Index() {
             </ProjectCard>
 
             <ProjectCard
-              title="Segmentación de Tarjetahabientes por Comportamiento de Gasto"
-              tech={["Python", "SQL"]}
+              title="Segmentación — Tarjetahabientes por Comportamiento de Gasto"
+              tech={["Python", "SQL", "Scikit-learn", "K-means"]}
               actions={
                 <ActionLink href="/ConsumoTarjetasCredito.html" variant="solid">
                   <FileText className="h-4 w-4" aria-hidden="true" />
@@ -412,20 +412,22 @@ function Index() {
               }
             >
               <CardBlock label="Problema">
-                Un banco colombiano contaba con datos de gasto de más de 47.000 tarjetahabientes,
-                pero no tenía una segmentación basada en su comportamiento de uso, limitando el
-                diseño de promociones dirigidas.
+                Un banco contaba con información de gasto de más de 47.000 tarjetahabientes,
+                pero no tenía una forma clara de agruparlos según como usaban sus tarjetas, lo
+                que dificultaba crear promociones dirigidas.
               </CardBlock>
               <CardBlock label="Enfoque">
-                Apliqué clustering K-means para segmentar clientes según su comportamiento
-                transaccional y utilicé el método del codo para determinar el número óptimo de
-                clústeres. Luego, mediante SQL, analicé la frecuencia, el gasto promedio y la
-                categoría dominante de cada clúster.
+                Se utilizó K-means para agrupar a los clientes según su comportamiento
+                transaccional y, mediante el método del codo, se definió el número de
+                segmentos. Luego, mediante consultas en SQL, se analizó la frecuencia de uso,
+                el gasto promedio y la categoría de mayor consumo de cada grupo.
               </CardBlock>
               <CardBlock label="Resultado">
-                Los tres clústeres se diferenciaron por frecuencia y valor de gasto: ocasionales
-                de bajo gasto (42.7%), ocasionales de alto valor (33.1%, 9 veces mayor) y
-                usuarios frecuentes (24.2%).
+                Se identificaron tres segmentos, ocasionales de bajo gasto (42.7%), ocasionales
+                de alto valor (33.1%) y usuarios frecuentes (24.2%). A partir de estos perfiles,
+                se definieron acciones para incentivar el uso de los clientes de bajo gasto,
+                fortalecer la retención de los de alto valor y aumentar la lealtad de los
+                usuarios frecuentes.
               </CardBlock>
               <ProjectImageGrid
                 columns={3}
@@ -441,27 +443,28 @@ function Index() {
             </ProjectCard>
 
             <ProjectCard
-              title="Automatización de Contratos Vehiculares"
-              tech={["n8n", "Google Gemini (IA)"]}
+              title="Automatización — Contratos Vehiculares"
+              tech={["n8n", "Gemini (IA)", "Process Automation"]}
               actions={
                 <DocsLink href="/docs/vehicle-contract-automation-technical-documentation.pdf" />
               }
             >
               <CardBlock label="Problema">
-                El equipo de facturación de un concesionario extraía manualmente 8 campos de
-                datos de contratos en PDF a una hoja de cálculo, un proceso lento y propenso a
-                errores humanos.
+                El equipo de facturación de un concesionario transcribía manualmente 8 campos de
+                información desde contratos en PDF a una hoja de cálculo. Era un proceso
+                repetitivo, lento y propenso a errores humanos.
               </CardBlock>
-              <CardBlock label="Enfoque">
-                Construí un flujo automatizado en n8n usando un bucle para procesar múltiples
-                contratos. El flujo lee los PDFs desde Drive, envía el texto a Gemini AI mediante
-                un nodo Information Extractor, actualiza Google Sheets y dispara una
-                confirmación por Gmail.
+              <CardBlock label="Solución">
+                Un flujo en n8n que automatiza el proceso de principio a fin, toma los
+                contratos desde Google Drive, extrae su contenido y utiliza Gemini AI para
+                identificar los 8 campos requeridos. Luego, registra automáticamente la
+                información en Google Sheets y, al terminar de procesar todos los contratos,
+                envía un correo de confirmación por Gmail.
               </CardBlock>
               <CardBlock label="Resultado">
-                El flujo procesó los 15 contratos sin errores, agregando automáticamente datos
-                estructurados y notificando al equipo. Esto eliminó el ingreso manual de datos,
-                optimizó el procesamiento por lotes y mejoró la confiabilidad de la facturación.
+                Se eliminó la carga manual de datos y se agilizó el procesamiento de contratos
+                por lotes, reduciendo errores y haciendo más confiable el proceso de
+                facturación.
               </CardBlock>
               <div className="flex flex-col gap-3">
                 <a
