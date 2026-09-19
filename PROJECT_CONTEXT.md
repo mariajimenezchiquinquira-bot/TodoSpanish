@@ -19,9 +19,9 @@ Este archivo resume la estructura de este proyecto y los cambios hechos con ayud
 2. **Zippto — Flashcards Personalizadas** (UI/UX Design, Supabase, Vercel, Claude Code)
 3. **Automatización — Solicitud Herramientas de Pago** (Power Automate, Process Automation)
 4. **WeWork: El Colapso Estratégico de un Modelo de Negocio de $47.000M** (Caso de Negocio, Análisis Estratégico, Business Understanding)
-5. **Análisis de Fuga de Clientes y Pérdida de Capital** (Power BI, DAX, Visualización de Datos)
-6. **Segmentación de Tarjetahabientes por Comportamiento de Gasto** (Python, SQL)
-7. **Automatización de Contratos Vehiculares** (n8n, Google Gemini IA)
+5. **Análisis — Fuga de Clientes y Pérdida de Capital** (Power BI, DAX, Visualización de Datos)
+6. **Segmentación — Tarjetahabientes por Comportamiento de Gasto** (Python, SQL, Scikit-learn, K-means)
+7. **Automatización — Contratos Vehiculares** (n8n, Gemini IA, Process Automation)
 
 Nota: el proyecto "Bud Light / AB InBev: El Costo de una Decisión de Marketing" se eliminó por completo a petición de la usuaria (texto, imágenes `budlight-*.png` y el PDF `BudLight_Case_Study_Analysis.pdf`) — no quedó guardado en ningún lado para reinsertar después, a diferencia de otros portafolios donde sí se guardan cards retiradas.
 
@@ -77,3 +77,11 @@ Solución: correr `find .git -name "*.lock" -delete` en Git Bash (dentro de la c
 ## Pendiente / a futuro
 
 - Revisar si el remote de git tiene algún token incrustado en la URL (buena práctica de seguridad, ya señalado como pendiente en otros portafolios).
+
+### Ajustes de texto y PDF en los tres proyectos de datos (sesión posterior)
+
+- **Análisis de Fuga de Clientes y Pérdida de Capital** → título cambiado a **"Análisis — Fuga de Clientes y Pérdida de Capital"** (raya larga "—"). Bloques Problema/Enfoque/Resultados reescritos.
+- **Segmentación de Tarjetahabientes por Comportamiento de Gasto** → título cambiado a **"Segmentación — Tarjetahabientes por Comportamiento de Gasto"**. Tags bajo el título ampliados de "Python · SQL" a **"Python · SQL · Scikit-learn · K-means"**. Bloques Problema/Enfoque/Resultado reescritos.
+- **Automatización de Contratos Vehiculares** → título cambiado a **"Automatización — Contratos Vehiculares"** (ya venía así de una sesión previa). Tags bajo el título ampliados de "n8n · Google Gemini (IA)" a **"n8n · Gemini (IA) · Process Automation"**. La etiqueta del segundo bloque se cambió de "Enfoque" a **"Solución"**, y los tres bloques (Problema/Solución/Resultado) se reescribieron.
+- El PDF del botón "Ver Documentación" de Automatización de Contratos Vehiculares (`public/docs/vehicle-contract-automation-technical-documentation.pdf`) se reemplazó por una versión en español subida por la usuaria (mismo nombre de archivo). Se verificó con `stat` (tamaño y `nlink=1`) que el archivo en disco realmente cambió antes de confirmar el cambio, por el problema conocido de hardlinks documentado en otros portafolios.
+- Estos mismos tres cambios de texto (sin el PDF) se aplicaron primero en `portfolio-data-analysis-es`, y este portafolio consolidado se actualizó después para mantener consistencia.
