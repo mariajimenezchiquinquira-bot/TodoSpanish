@@ -18,7 +18,7 @@ Este archivo resume la estructura de este proyecto y los cambios hechos con ayud
 1. **Payra Split — Función de Pagos Compartidos** (Notion, Jira, Tableau, Scrum)
 2. **Zippto — Flashcards Personalizadas** (UI/UX Design, Supabase, Vercel, Claude Code)
 3. **Automatización — Solicitud Herramientas de Pago** (Power Automate, Process Automation)
-4. **WeWork: El Colapso Estratégico de un Modelo de Negocio de $47.000M** (Caso de Negocio, Análisis Estratégico, Business Understanding)
+4. **WeWork — Business Case** (Business Intelligence, Business Strategy, Financial Analysis)
 5. **Análisis — Fuga de Clientes y Pérdida de Capital** (Power BI, DAX, Visualización de Datos)
 6. **Segmentación — Tarjetahabientes por Comportamiento de Gasto** (Python, SQL, Scikit-learn, K-means)
 7. **Automatización — Contratos Vehiculares** (n8n, Gemini IA, Process Automation)
@@ -85,3 +85,12 @@ Solución: correr `find .git -name "*.lock" -delete` en Git Bash (dentro de la c
 - **Automatización de Contratos Vehiculares** → título cambiado a **"Automatización — Contratos Vehiculares"** (ya venía así de una sesión previa). Tags bajo el título ampliados de "n8n · Google Gemini (IA)" a **"n8n · Gemini (IA) · Process Automation"**. La etiqueta del segundo bloque se cambió de "Enfoque" a **"Solución"**, y los tres bloques (Problema/Solución/Resultado) se reescribieron.
 - El PDF del botón "Ver Documentación" de Automatización de Contratos Vehiculares (`public/docs/vehicle-contract-automation-technical-documentation.pdf`) se reemplazó por una versión en español subida por la usuaria (mismo nombre de archivo). Se verificó con `stat` (tamaño y `nlink=1`) que el archivo en disco realmente cambió antes de confirmar el cambio, por el problema conocido de hardlinks documentado en otros portafolios.
 - Estos mismos tres cambios de texto (sin el PDF) se aplicaron primero en `portfolio-data-analysis-es`, y este portafolio consolidado se actualizó después para mantener consistencia.
+
+### Reemplazo del proyecto WeWork por la versión de portfolio-bi-es
+
+- Se reemplazó por completo la tarjeta "WeWork: El Colapso Estratégico de un Modelo de Negocio de $47.000M" (que usaba 3 imágenes: `wework-valuation.png`, `wework-timeline.png`, `wework-losses-donut.png`, y enlazaba a `WeWork_Case_Study_Analysis.pdf`) por la versión que ya existía en `portfolio-bi-es`.
+- Nueva tarjeta: **"WeWork — Business Case"**, tags **Business Intelligence · Business Strategy · Financial Analysis**. Bloques Problema/Análisis/Insight (en vez de Problema/Enfoque/Resultado), con una sola imagen: `wework-dashboard-overview.png`.
+- El botón de documentación ahora enlaza a `public/docs/WeWork_Case_Study_Analysis.html` (versión HTML) en vez del PDF. Se copiaron ambos archivos nuevos (`wework-dashboard-overview.png` y `WeWork_Case_Study_Analysis.html`) desde `portfolio-bi-es` a este proyecto.
+- Los imports de las tres imágenes anteriores (`weworkValuation`, `weworkTimeline`, `weworkLossesDonut`) se quitaron de `src/routes/index.tsx` y se reemplazaron por el import de `weworkDashboardOverview`.
+- El PDF viejo (`WeWork_Case_Study_Analysis.pdf`) y las tres imágenes viejas se dejaron en el proyecto sin borrar (no se usan en el código, pero no se eliminaron del disco).
+- Cambios verificados corriendo `npm install` + `npm run dev` localmente (la usuaria confirmó que se ve bien) y luego confirmados con `git add` + `git commit` (commit `bc5be78`). El `git push` lo hizo la usuaria manualmente.
