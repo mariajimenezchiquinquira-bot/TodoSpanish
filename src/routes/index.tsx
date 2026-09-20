@@ -23,9 +23,7 @@ import payraSplitJiraBoard from "@/assets/projects/payrasplit-jira-board.png";
 import payraSplitNotionCover from "@/assets/projects/payrasplit-notion-cover.png";
 import payraSplitNotionTimelineBacklog from "@/assets/projects/payrasplit-notion-timeline-backlog.png";
 import payraSplitTableau from "@/assets/projects/payrasplit-tableau-dashboard.png";
-import weworkValuation from "@/assets/projects/wework-valuation.png";
-import weworkTimeline from "@/assets/projects/wework-timeline.png";
-import weworkLossesDonut from "@/assets/projects/wework-losses-donut.png";
+import weworkDashboardOverview from "@/assets/projects/wework-dashboard-overview.png";
 import churnDashboard from "@/assets/projects/churn-capital-loss-dashboard-v2.png";
 import segElbowMethod from "@/assets/projects/segmentation-5-elbow-method.png";
 import segDominantCategory from "@/assets/projects/segmentation-4-dominant-category.png";
@@ -304,72 +302,45 @@ function Index() {
             </ProjectCard>
 
             <ProjectCard
-              title="WeWork: El Colapso Estratégico de un Modelo de Negocio de $47.000M"
-              tech={["Caso de Negocio", "Análisis Estratégico", "Business Understanding"]}
+              title="WeWork — Business Case"
+              tech={["Business Intelligence", "Business Strategy", "Financial Analysis"]}
               actions={
-                <DocsLink href="/docs/WeWork_Case_Study_Analysis.pdf" label="Ver Análisis Completo" />
+                <DocsLink href="/docs/WeWork_Case_Study_Analysis.html" label="Ver Análisis Completo" />
               }
             >
               <CardBlock label="Problema">
-                WeWork alcanzó una valoración de $47.000 millones en enero de 2019, pero se
-                declaró en bancarrota en noviembre de 2023. Su modelo dependía de compromisos de
-                arrendamiento a largo plazo mientras generaba ingresos mediante membresías
-                flexibles de corto plazo, creando una exposición financiera significativa cuando
-                la demanda se debilitó. ¿Qué decisiones estratégicas impulsaron este colapso?
+                WeWork alcanzó una valoración de USD 47.000M en 2019, pero terminó
+                declarándose en bancarrota en 2023. El reto fue utilizar información
+                financiera y operativa para entender qué había detrás de ese crecimiento y qué
+                señales indicaban riesgos para la sostenibilidad del negocio.
               </CardBlock>
-              <CardBlock label="Enfoque">
-                Analicé su modelo de arrendamiento a largo plazo y subarriendo flexible, la
-                cultura de gasto bajo el liderazgo de Adam Neumann, y las fallas de gobernanza
-                previas al IPO de 2019. El análisis se enfocó en la relación entre la expansión
-                agresiva, la sostenibilidad financiera y la gestión de riesgo.
+              <CardBlock label="Análisis">
+                Analicé la evolución de ingresos, pérdidas, costos, pasivos, patrimonio y
+                compromisos financieros, conectando estos indicadores con el modelo de negocio y
+                la estrategia de expansión. El objetivo fue entender no solo qué estaba
+                ocurriendo, sino qué características del modelo y qué decisiones estaban
+                generando esos resultados.
               </CardBlock>
-              <CardBlock label="Resultado">
-                WeWork pasó de $47.000 millones a la bancarrota, acumulando $11.400 millones en
-                pérdidas netas entre 2020 y mediados de 2023. El colapso fue impulsado por un
-                desajuste estructural de riesgo, una expansión sin rentabilidad comprobada y una
-                gobernanza débil.
+              <CardBlock label="Insight">
+                El crecimiento de WeWork estuvo acompañado de pérdidas significativas, mayores
+                obligaciones financieras y compromisos de largo plazo, evidenciando una brecha
+                entre el crecimiento del negocio y su capacidad para sostenerlo financieramente.
+                El análisis permitió identificar cómo los datos financieros podían revelar
+                riesgos estratégicos y de sostenibilidad del negocio.
               </CardBlock>
-              <div className="grid gap-3 sm:grid-cols-[1.5fr_1fr_1fr]">
-                <a
-                  href={weworkTimeline}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center justify-center overflow-hidden rounded-md"
-                >
-                  <img
-                    src={weworkTimeline}
-                    alt="Línea de tiempo de las decisiones estratégicas clave de WeWork"
-                    loading="lazy"
-                    className="max-h-[220px] w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                </a>
-                <a
-                  href={weworkValuation}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center justify-center overflow-hidden rounded-md"
-                >
-                  <img
-                    src={weworkValuation}
-                    alt="Valoración de WeWork desde el pico de 2019 hasta la bancarrota de 2023"
-                    loading="lazy"
-                    className="max-h-[220px] w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                </a>
-                <a
-                  href={weworkLossesDonut}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center justify-center overflow-hidden rounded-md"
-                >
-                  <img
-                    src={weworkLossesDonut}
-                    alt="Pérdidas netas acumuladas de WeWork 2020-2023"
-                    loading="lazy"
-                    className="max-h-[220px] w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                </a>
-              </div>
+              <a
+                href={weworkDashboardOverview}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex items-center justify-center overflow-hidden rounded-md"
+              >
+                <img
+                  src={weworkDashboardOverview}
+                  alt="Dashboard de indicadores clave de WeWork: valoración, pasivos vs. patrimonio, ingresos vs. pérdida neta y crecimiento operativo"
+                  loading="lazy"
+                  className="mx-auto w-full max-w-3xl rounded-md bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </a>
             </ProjectCard>
 
             <ProjectCard
